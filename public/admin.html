@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Red Room | Admin</title><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/admin.css"></head>
+<body class="admin-body">
+<div id="login" class="admin-login"><div class="login-card"><div class="brand">🔴 RED ROOM</div><div class="eyebrow">PROJECT ADMIN</div><h1>Administrator access</h1><p>Enter the configured project password.</p><input id="password" type="password" placeholder="Admin password"><button id="loginBtn" class="btn primary full">Sign in</button><div id="loginError" class="error"></div></div></div>
+<div id="dashboard" class="hidden"><header class="admin-head"><a class="brand" href="/">🔴 RED ROOM</a><div><span class="pill">MONITORED ENVIRONMENT</span><button id="logout" class="btn ghost small">Sign out</button></div></header>
+<main class="admin-main"><div class="admin-title"><div><div class="eyebrow">CONTROL CENTER</div><h1>Room administration</h1></div><button id="refresh" class="btn ghost">↻ Refresh</button></div>
+<div id="stats" class="stats"></div><section class="rooms-card"><div class="section-head"><h2>Active rooms</h2><span id="updated"></span></div><div id="rooms"></div></section></main></div>
+<div id="roomModal" class="modal hidden"><div class="admin-room-modal"><button id="closeRoom" class="close">×</button><div id="roomDetail"></div></div></div>
+<script src="/js/admin.js"></script></body></html>
